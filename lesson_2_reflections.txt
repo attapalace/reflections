@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+At first  an empty git repository is initialized (git init) without any commits ,so i can create my own commit at a certain point, after that we show status by(git status) ,we use (git add) to add track files).
+

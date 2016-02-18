@@ -2,3 +2,7 @@ What happens when you initialize a repository? Why do you need to do it?
 
 At first  an empty git repository is initialized (git init) without any commits ,so i can create my own commit at a certain point, after that we show status by(git status) ,we use (git add) to add track files).
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+staging area is a place where we add files to be tracked before making a commit , i think it is of great value because we may delete files from tracked files or add new files and then we make a commit when we are ready .
+

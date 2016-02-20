@@ -1,8 +1,28 @@
-What happens when you initialize a repository? Why do you need to do it?
+1-What happens when you initialize a repository? Why do you need to do it?
 
 At first  an empty git repository is initialized (git init) without any commits ,so i can create my own commit at a certain point, after that we show status by(git status) ,we use (git add) to add track files).
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+2-How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 staging area is a place where we add files to be tracked before making a commit , i think it is of great value because we may delete files from tracked files or add new files and then we make a commit when we are ready .
 
+3-How can you use the staging area to make sure you have one commit per logical change?
+
+after making a change to a file in the working directory i write (git add) to the file to go to the staging area , then after (git status) it writes there have been changes added so after i write (git commit) i write a commit message by the editor ,if there are any changes not added and i want to delete them i write ( git reset --hard) to delete those changes , to compare between working directory and staging area (git diff) with no arguments , and (git diff --staged) to compare staging area and recent commit .
+
+4-What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches are helpful when i want to make a different version of an application like different language or easier mode or to test an experimental feature , it will make a new branch as the master branch with the same code ,so any changes i make will affect only this branch.
+
+5-How do the diagrams help you visualize the branch structure?
+
+the diagram helps me to know the parent of any commit and if any two commits are related , it also shows me if a commit belongs to a certain branch.
+
+6-What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+when we merge two branches we put all their commits in the master branch ,and they will be distributed by their date by(git merge master branch-two) and then we delete the branch label (git branch -d branch-two),
+we represent it in a way to show the parent of each commit and to see how they are related and to see how was the original file and changes proceded
+
+7-What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging will make a conflict when the two branches would have similar code with different values ,while it shows me where the conflict is so i can modify it manually .

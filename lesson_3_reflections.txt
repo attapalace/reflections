@@ -11,3 +11,8 @@ What is the benefit of having a copy of the last known state of the remote store
 this will help to avoid conflicting between local and remote codes because in large codes it will be hard
 to fix a conflict.
 
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+i would collaborate using GitHub by creating pull request after i make a new branch with the changes on Git
+and push my changes to GitHub asking my partners to see and review my code, this way is much easier than 
+using only Git.
